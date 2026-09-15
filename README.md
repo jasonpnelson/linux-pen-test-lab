@@ -6,17 +6,17 @@ This project documents an end-to-end penetration testing workflow against a Linu
 ### 1. Network Reconnaissance & Vulnerability Scanning
 The engagement began with an `nmap` scan to identify active services, followed by `searchsploit` to identify a known vulnerability in the ProFTPD service.
 
-![Reconnaissance Phase](redacted.png)
+![Reconnaissance Phase](01-recon-nmap.png)
 
 ### 2. Exploitation & Privilege Escalation
 Using the Metasploit Framework, I executed the identified exploit to establish a reverse TCP shell, gaining initial access and subsequently escalating to `root`.
 
-![Exploitation Phase](redacted2.png)
+![Exploitation Phase](02-exploitation.png)
 
 ### 3. Password Recovery & Analysis
 After gaining system access, I retrieved the shadow file and utilized John the Ripper to perform password recovery, demonstrating the importance of strong credential management.
 
-![Password Recovery Phase](redacted3.png)
+![Password Recovery Phase](03-password-analysis.png)
 
 ---
 
